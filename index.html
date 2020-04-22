@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head lang="tr">
+        <script language="javascript"> 
+        function ana(){
+           var x = document.getElementById("aydi").value;
+           
+            if(x%2==1){
+                var y=x*x/2+0.5;
+                var z=x*x/2-0.5;
+           }
+           else if(x%2==0){
+                var y=x*x/4+1;
+                var z=x*x/4-1;
+           }
+            document.writeln("<h2>"+x+" , "+z+" ve "+y+"</h2>");
+           
+        }
+       </script>
+    </head>
+    <body>
+        <input type="text" id="aydi">
+        <button onclick="ana()">Başlat</button>
+    </body>
+</html>
